@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		63703BEA2829366E008F4ABC /* TopTabBarView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 63703BE92829366E008F4ABC /* TopTabBarView.docc */; };
 		63703BEB2829366E008F4ABC /* TopTabBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63703BE82829366E008F4ABC /* TopTabBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63703BF228293726008F4ABC /* SimpleAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63703BF128293726008F4ABC /* SimpleAlgorithms.swift */; };
 		63703C32282940C6008F4ABC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63703C2E282940C6008F4ABC /* UIView+Extension.swift */; };
 		63703C33282940C6008F4ABC /* TopTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63703C2F282940C6008F4ABC /* TopTabbarView.swift */; };
 		63703C34282940C6008F4ABC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63703C30282940C6008F4ABC /* CircleView.swift */; };
@@ -21,7 +20,6 @@
 		63703BE52829366E008F4ABC /* TopTabBarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TopTabBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63703BE82829366E008F4ABC /* TopTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopTabBarView.h; sourceTree = "<group>"; };
 		63703BE92829366E008F4ABC /* TopTabBarView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TopTabBarView.docc; sourceTree = "<group>"; };
-		63703BF128293726008F4ABC /* SimpleAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlgorithms.swift; sourceTree = "<group>"; };
 		63703C2E282940C6008F4ABC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		63703C2F282940C6008F4ABC /* TopTabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabbarView.swift; sourceTree = "<group>"; };
 		63703C30282940C6008F4ABC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				63703C36282940CE008F4ABC /* Media */,
 				63703BE82829366E008F4ABC /* TopTabBarView.h */,
 				63703BE92829366E008F4ABC /* TopTabBarView.docc */,
-				63703BF128293726008F4ABC /* SimpleAlgorithms.swift */,
 				63703C2D282940C6008F4ABC /* Source */,
 			);
 			path = TopTabBarView;
@@ -172,7 +169,6 @@
 				63703C34282940C6008F4ABC /* CircleView.swift in Sources */,
 				63703C32282940C6008F4ABC /* UIView+Extension.swift in Sources */,
 				63703BEA2829366E008F4ABC /* TopTabBarView.docc in Sources */,
-				63703BF228293726008F4ABC /* SimpleAlgorithms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
