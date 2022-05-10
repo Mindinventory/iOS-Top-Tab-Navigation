@@ -28,7 +28,7 @@ Then run `pod install` from the Example directory.
 
 ## Usage
 
-1. Change the class of a view from UIView to CustomRadarView
+1. Change the class of a view from UIView to TopTabbarView
 ```swift
 @IBOutlet private weak var topTabBarView: TopTabbarView!
 ```
