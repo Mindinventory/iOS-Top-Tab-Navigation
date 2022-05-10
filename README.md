@@ -25,3 +25,79 @@ To install it, simply add the following line to your Podfile:
 pod 'TopTabBarView', git: 'https://github.com/parthgohel2810/TopTabBarView-Framework.git', branch: 'main'
 ```
 Then run `pod install` from the Example directory.
+
+## Usage
+
+1. Change the class of a view from UIView to CustomRadarView
+```swift
+@IBOutlet private weak var topTabBarView: TopTabbarView!
+```
+2. Programmatically:
+
+```swift
+let topTabBarView = TopTabbarView(frame: myFrame)
+
+```
+
+## Customization 
+
+```swift
+    private func configureTabBarItem() {
+        
+        topTabBarView.dataSource = ["M", "I", "N", "D", "I", "N", "V", "E", "N", "T", "O", "R", "Y"]
+        topTabBarView.dotColor = .white
+        topTabBarView.waveHeight = 16
+        topTabBarView.leftPadding = 10
+        topTabBarView.rightPadding = 10
+        topTabBarView.tabBarColor = .red
+        topTabBarView.onItemSelected = { (index) in
+                debugPrint("tabIndex: \(index)")
+        }
+        topTabBarView.isScaleItem = true
+        topTabBarView.tabBarItemStyle = .setStyle(font: UIFont.boldSystemFont(ofSize: 18),
+                                                  foregroundColor: .white)
+    }
+```
+
+#### dataSource
+The dataSource property accepts string array which is used to display title of tab and creates number of tab that you want to create.
+
+#### dotColor
+The dotColor property change the color of dot which is place at center of wave.
+
+#### waveHeight
+The waveHeight property change height of wave.
+
+#### leftPadding, rightPadding
+The left and right padding property will change the tabBar left and right padding to the view.
+
+#### tabBarColor
+The tabBarColor property used to change background color of tabbar color.
+
+#### isScaleItem
+The isScaleItem property enables you to off/on scaling of tab titles.
+
+#### tabBarItemStyle
+The tabBarItemStyle used to tabBarItem font and textColor.
+
+#### onItemSelected
+You will receive selected tab index in onItemSelected clouser.
+```swift
+  topTabBarView.onItemSelected = { (index) in
+                debugPrint("tabIndex: \(index)")
+  }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
