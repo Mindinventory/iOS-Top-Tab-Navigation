@@ -1,6 +1,6 @@
 //
-//  CustomTabBar.swift
-//  CustomTopBarDemo
+//  TabBarCollectionView.swift
+//  TopTabbarView
 //
 //  Created by Parth Gohel on 06/05/22.
 //
@@ -43,25 +43,23 @@ public class TabBarCollectionView: UICollectionView {
     
     var dotColor: UIColor = .red {
         didSet {
-            circlePoint.fillColor = dotColor
+            circlePoint.backgroundColor = dotColor
         }
     }
     internal var minimalHeight: CGFloat = 18
     private var kLayerFillColor: CGColor = UIColor.red.cgColor
     private var displayLink: CADisplayLink!
+    var count: Int = 0
     private let tabBarShapeLayer = CAShapeLayer()
-    private var minimalY: CGFloat {
-        get {
-            return -minimalHeight
-        }
-    }
     var animating = false {
         didSet {
-            self.isUserInteractionEnabled = !animating
-            self.displayLink?.isPaused = !animating
+            if animating {
+                displayLink?.isPaused = false
+                count = 0
+            }
         }
     }
-    
+    var selectedTab: Int = 1
     /// Controll point of wave
     
     private var leftPoint4 = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 8, height: 8)) {
@@ -142,11 +140,11 @@ extension TabBarCollectionView {
         addSubview(rightPoint4)
         addSubview(circlePoint)
         displayLink = CADisplayLink(target: self, selector: #selector(updateShapeLayer))
-        displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.default)
+        displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
         displayLink?.isPaused = true
         tabBarShapeLayer.fillColor = kLayerFillColor
         layer.insertSublayer(tabBarShapeLayer, at: 0)
-        update(with: 1)
+        update(with: selectedTab)
         updateShapeLayer()
     }
 
@@ -181,11 +179,15 @@ extension TabBarCollectionView {
         centerPoint2.center = CGPoint(x: imaganaeryFram.maxX + width/2, y: self.bounds.maxY)
         rightPoint1.center = CGPoint(x: imaganaeryFram.midX + topOffset + 8, y: imaganaeryFram.minY)
         rightPoint2.center = CGPoint(x: imaganaeryFram.maxX - bottomOffset, y: self.bounds.maxY)
-        circlePoint.center = CGPoint(x: leftPoint2.center.x, y: self.bounds.maxY)
+        circlePoint.center = CGPoint(x: leftPoint2.center.x, y: self.bounds.maxY+4)
     }
 
     /// updateShapeLayer
     @objc func updateShapeLayer() {
+        count += 1
+        if count == 50 {
+            displayLink?.isPaused = true
+        }
         tabBarShapeLayer.path = getCurrentPath()
     }
 
@@ -213,6 +215,5 @@ extension TabBarCollectionView {
         bezierPath.addLine(to: CGPoint(x: self.bounds.width, y: self.bounds.height))
         bezierPath.close()
         return bezierPath.cgPath
-        
     }
 }

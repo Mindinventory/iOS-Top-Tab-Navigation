@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     private var pageViewController: UIPageViewController!
     private var viewControllers: [UIViewController] = []
-    private var collectionDataSource: [String] = ["M", "I", "N", "D", "I", "N", "V", "E", "N", "T", "O", "R", "Y"]
+    private var collectionDataSource: [String] = ["M", "I", "N", "D", "3", "0", "0"]
 
     var selectedIndex: Int = 0
 
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         
         topTabBarView.dataSource = collectionDataSource
         topTabBarView.dotColor = .white
-        topTabBarView.waveHeight = 16
-        topTabBarView.leftPadding = 10
-        topTabBarView.rightPadding = 10
+        topTabBarView.waveHeight = 20
+        topTabBarView.leftPadding = 60
+        topTabBarView.rightPadding = 60
         topTabBarView.tabBarColor = .red
         view.backgroundColor = .red
         topTabBarView.onItemSelected = {[weak self] (index) in
@@ -41,6 +41,20 @@ class ViewController: UIViewController {
         topTabBarView.isScaleItem = true
         topTabBarView.tabBarItemStyle = .setStyle(font: UIFont.boldSystemFont(ofSize: 18),
                                                   foregroundColor: .white)
+        topTabBarView.selectedTab = 1
+        applyCorner()
+    }
+
+    func applyCorner() {
+        DispatchQueue.main.async {
+            let rectShape = CAShapeLayer()
+            rectShape.bounds = self.topTabBarView.contentView.bounds
+            rectShape.position = self.topTabBarView.contentView.center
+            rectShape.path = UIBezierPath(roundedRect: self.topTabBarView.contentView.bounds, byRoundingCorners: [.bottomLeft , .bottomRight], cornerRadii: CGSize(width: 50, height: 50)).cgPath
+            
+            self.topTabBarView.contentView.layer.backgroundColor = UIColor.red.cgColor
+            self.topTabBarView.contentView.layer.mask = rectShape
+        }
     }
 
     private func configurePageViewController() {
@@ -61,21 +75,5 @@ class ViewController: UIViewController {
         self.pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
         self.pageContainerView.addSubview(pageViewController.view)
         self.pageViewController.didMove(toParent: self)
-    }
-}
-
-extension CGFloat {
-    static func random() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-}
-extension UIColor {
-    static func random() -> UIColor {
-        return UIColor(
-            red:   .random(),
-            green: .random(),
-            blue:  .random(),
-            alpha: 1.0
-        )
     }
 }
