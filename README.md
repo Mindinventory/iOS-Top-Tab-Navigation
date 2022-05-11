@@ -80,6 +80,12 @@ The isScaleItem property enables you to off/on scaling of tab titles.
 #### tabBarItemStyle
 The tabBarItemStyle used to tabBarItem font and textColor.
 
+#### selectedTab
+The selectedTab used to set selected tab initially.
+
+#### setSelectedTab(with index: Int)
+This function used to set selected tab programmatically.
+
 #### onItemSelected
 You will receive selected tab index in onItemSelected clouser.
 ```swift
