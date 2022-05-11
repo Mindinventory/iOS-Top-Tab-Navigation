@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-FK-vZc">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssg-3m-7Tb" customClass="TopTabbarView" customModule="TopTabBarView">
@@ -36,7 +36,7 @@
                             <constraint firstItem="ssg-3m-7Tb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LK1-Wx-gtm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7jK-FK-vZc" secondAttribute="bottom" id="SP3-Jg-MML"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ssg-3m-7Tb" secondAttribute="trailing" id="buZ-oA-MHn"/>
-                            <constraint firstItem="7jK-FK-vZc" firstAttribute="top" secondItem="ssg-3m-7Tb" secondAttribute="bottom" constant="-20" id="jKJ-Qj-sTL"/>
+                            <constraint firstItem="7jK-FK-vZc" firstAttribute="top" secondItem="ssg-3m-7Tb" secondAttribute="bottom" constant="-40" id="jKJ-Qj-sTL"/>
                             <constraint firstItem="7jK-FK-vZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tog-Hb-4P9"/>
                         </constraints>
                     </view>
