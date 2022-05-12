@@ -12,7 +12,7 @@
 </a>
 <p></p> 
 
-![](/Example/Example/Media/demo.mov)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/84714866/168016996-f874becf-2731-489b-b880-e7d687fbfc46.gif)
 
 ## Installation
 To install it, simply add the following line to your Podfile:
