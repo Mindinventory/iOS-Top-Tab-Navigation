@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84714866/168016996-f874becf-2731-489b-b880-e7d687fbfc46.gif">
+  <img src="https://user-images.githubusercontent.com/84714866/168037057-fb6d82f4-0bdd-44cc-adf2-5f622853f658.gif">
 </p>
 
 ## Installation
@@ -144,6 +144,7 @@ If you use our open-source libraries in your project, please make sure to credit
 <a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
 <img src="https://github.com/Sammindinventory/MindInventory/blob/main/hirebutton.png" width="203" height="43"  alt="app development">
 </a>
+
 
 
 
