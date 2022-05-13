@@ -1,6 +1,6 @@
 # iOS-Top-Tab-Navigation
 
-Good news for all our users out there! Now there are no boundaries to your convenience, you can pass as much words as you want and bind the same number of  pages using page controle, their is no limit of words and neither for your easiness.
+Good news for all our users out there! Now there are no boundaries to your convenience, you can pass as much words as you want and bind the same number of  pages using page control, their is no limit of words and neither for your easiness.
 
 Checkout this super easy navigation integration and example.!!! 
 
