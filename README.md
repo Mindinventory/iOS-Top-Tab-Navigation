@@ -1,9 +1,5 @@
 # iOS-Top-Tab-Navigation
 
-Good news for all our users out there! Now there are no boundaries to your convenience, you can pass as much words as you want and bind the same number of  pages using page control, their is no limit of words and neither for your easiness.
-
-Checkout this super easy navigation integration and example.!!! 
-
 <a href="https://docs.swift.org/swift-book/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/swift-5.0-brightgreen">
 </a>
@@ -16,6 +12,9 @@ Checkout this super easy navigation integration and example.!!!
 </a>
 <p></p> 
 
+Good news for all our users out there! Now there are no boundaries to your convenience, you can pass as much words as you want and bind the same number of  pages using page control, their is no limit of words and neither for your easiness.
+
+Checkout this super easy navigation integration and example.!!! 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84714866/168037057-fb6d82f4-0bdd-44cc-adf2-5f622853f658.gif">
