@@ -1,4 +1,4 @@
-# iOS-Step-Bar
+# iOS-Top-Tab-Navigation
 
 <a href="https://docs.swift.org/swift-book/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/swift-5.0-brightgreen">
@@ -12,10 +12,9 @@
 </a>
 <p></p> 
 
-Good news for all our users out there! Now there are no boundaries to your convenience, StepIndicator is an iOS library that indicates steps in an animated way. 
-Swfit 5 is supported.
+Good news for all our users out there! Now there are no boundaries to your convenience, you can pass as much words as you want and bind the same number of  pages using page control, their is no limit of words and neither for your easiness.
 
-Checkout this super easy Step Bar integration and example.!!! 
+Checkout this super easy navigation integration and example.!!! 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84714866/168037057-fb6d82f4-0bdd-44cc-adf2-5f622853f658.gif">
@@ -25,7 +24,7 @@ Checkout this super easy Step Bar integration and example.!!!
 To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MIStepBar', git: 'https://github.com/PiyushSelarka/MIStepBar.git', branch: 'main'
+pod 'TopTabBarView', git: 'https://github.com/parthgohel2810/TopTabBarView-Framework.git', branch: 'main'
 ```
 Then run `pod install` from the Example directory.
 
@@ -140,7 +139,7 @@ You will receive selected tab index in onItemSelected clouser.
 <br></br>
 
 ## 📄 License
-iOS-Top-Tab-Navigation is [MIT-licensed](/LICENSE).
+iOS-MiStepBar is [MIT-licensed](/LICENSE).
 
 
 If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventory.com
@@ -148,16 +147,3 @@ If you use our open-source libraries in your project, please make sure to credit
 <a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
 <img src="https://github.com/Sammindinventory/MindInventory/blob/main/hirebutton.png" width="203" height="43"  alt="app development">
 </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
