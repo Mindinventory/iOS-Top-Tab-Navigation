@@ -139,7 +139,7 @@ You will receive selected tab index in onItemSelected clouser.
 <br></br>
 
 ## 📄 License
-iOS-MiStepBar is [MIT-licensed](/LICENSE).
+iOS-Top-Tab-Navigation is [MIT-licensed](/LICENSE).
 
 
 If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventory.com
